@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../users/users.service';
-import * as collegeData from './../../assets/2019.json'
+import * as collegeData from './2019.json'
 import { FormBuilder, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-dashboard',
