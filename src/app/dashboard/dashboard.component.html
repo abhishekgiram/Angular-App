@@ -1,13 +1,13 @@
 <div id="gradient"></div>
 <form class="searchbox" [formGroup]="collegeForm" >
-        <input type="search" placeholder="Enter College Name"  formControlName="collegeName" />
+        <input type="search" placeholder="Enter College"  formControlName="collegeName" />
         <button type="submit" (click)="searchCollege()" value="search">&nbsp;</button>
     </form>
   <div class="byline">
     <div class="card" *ngFor="let college of searchedColleges">
         <div class="container">
           <h4><b>{{college.Institute}}</b></h4>
-          <p>{{college.CourseName}} cutoff : {{college.cutoff}}</p>
+          <p>{{college.CourseName}} cutoff : {{college.cutoff}} </p>
         </div>
       </div>
   </div>
